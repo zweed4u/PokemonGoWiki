@@ -1,5 +1,3 @@
-# INSTALLATION
-
 ## Mac Installation
 There has been lots of people reporting the same if not similar errors when trying to setup the current codebase on Mac.
 
