@@ -11,6 +11,13 @@ Right-click > save as the `get-pip.py` file - save to desktop
 
 > sudo python get-pip.py
 
+**Install virtualenv**
+> cd /path/to/PokemonGo-Bot
+> sudo pip install virtualenv
+> virtualenv venv
+> source venv/bin/activate
+> sudo pip install -r requirements.txt
+
 
 ***
 
