@@ -11,6 +11,11 @@ Right-click > save as the `get-pip.py` file - save to desktop
 
 > sudo python get-pip.py
 
+**Install Homebrew**
+
+> /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+
 **Install virtualenv**
 > cd /path/to/PokemonGo-Bot
 
