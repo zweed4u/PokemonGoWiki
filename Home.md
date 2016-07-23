@@ -3,7 +3,7 @@ PokemonGo-Bot wiki!
 ## Item ID-s for -if Param.
 e.g, [\"101\",\"102\",\"103\",\"104\"]
 
-` 1. "0": "Unknown",`
+1. "0": "Unknown",`
 1.     `"1": "Pokeball",`
 1.     `"2": "Greatball",`
 1.     `"3": "Ultraball",`
@@ -32,5 +32,5 @@ e.g, [\"101\",\"102\",\"103\",\"104\"]
 1.     `"901": "Incubator (Unlimited)",`
 1.     `"902": "Incubator",`
 1.     `"1001": "Pokemon Storage Upgrade",`
-1.     `"1002": "Item Storage Upgrade"`
+1.     `"1002": "Item Storage Upgrade"
 
