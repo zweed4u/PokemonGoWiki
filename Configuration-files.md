@@ -17,7 +17,7 @@
 | `item_filter`      |         | Pass a list of unwanted items (in json format) to recycle when collected at a Pokestop                                                                                                      |
 | `evolve_all`       | NONE    | Set to true to evolve Pokémon if possible, takes Pokémon as an argument as well.                                                                                                            |
 | `evolve_speed`     | 20      | Set the speed between each evolves in seconds. (Defaults to 3.7 seconds if not set)                                                                                                         |
-| `cp_min`           | 300     |                                                                                                                                                                                             |
+| `cp_min`           | 300   |                   Min. CP for evolve_all function                                                                                                                                                                          |
 | `use_lucky_egg`    | false   | Use lucky egg to boost xp loot                                                                                                                                                              |
 | `evolve_captured`  | false   | Evolve Pokémon after capturing                                                                                                                                                              |
 
