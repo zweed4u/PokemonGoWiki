@@ -5,4 +5,4 @@
 > $ source venv/Scripts/activate  
 > $ pip install -r requirements.txt
 
-Once you are uo to date with [dev-branch] (https://github.com/PokemonGoF/PokemonGo-Bot/tree/dev) create a pull request and it will be re-viewed
+Once you are you to date with [dev-branch] (https://github.com/PokemonGoF/PokemonGo-Bot/tree/dev) create a pull request and it will be re-viewed
