@@ -2,7 +2,8 @@ The webpage is a submodule to this repository and config related to that is in .
 
 [OpenPoGoWeb] (https://github.com/OpenPoGo/OpenPoGoWeb) uses Google Maps. Read their [README] (https://github.com/OpenPoGo/OpenPoGoWeb/blob/master/README.md) for how to configure web frontend
 
-### Additional info
+## How to set up a simple webserver with nginx
+## SimpleHTTPServer
 You can either view the map via opening the html file, or by serving it with SimpleHTTPServer (runs on localhost:8000)  
 To use SimpleHTTPServer:  
 ```$ python -m SimpleHTTPServer [port]```
@@ -13,3 +14,23 @@ Copy userdata.js.example to userdata.js and edit with your favorite text editor.
 put your username in the quotes instead of "username"
 If using multiple usernames format like this:  
 ```var users = ["username1","username2"];```
+
+### Nginx on Ubuntu 14.x, 16.x
+#### 1. Install nginx on your Ubuntu machine (e.g. on locally or AWS)
+```
+sudo apt-get update
+sudo apt-get install nginx
+```
+
+#### 2. Check the webserver
+Check if the webserver is running by using your browser and entering the IP address of your local machine/server.
+On a local machine this would be http://127.0.0.1. On AWS this is your public DNS if you haven't configured an elastic IP.
+
+#### 3. Change Base Directory of the Webserver
+```
+sudo nano "/etc/nginx/sites-enabled/default"
+```
+Comment out following line: ```root /var/www/html;``` and change it to the web folder of your PokemonGo-Bot: eg:
+```
+/home/user/dev/PokemonGo-Bot/web;
+```
