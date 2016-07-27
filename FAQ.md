@@ -13,22 +13,15 @@ Try to generate an [app password](!https://support.google.com/accounts/answer/18
 ```
 This error mostly occurs for those who are using 2 factor authentication, but either way, for the purpose of security it would be nice to have a separate password for the bot app.
 
-
 ### FLEE
 The status code "3" corresponds to "Flee" - meaning your Pokemon has ran away.
    {"responses": { "CATCH_POKEMON": { "status": 3 } }
+
 ### My pokemon are not showing up in my Pokedex?
 Finish the tutorial on a smartphone. This will then allow everything to be visible.
+
 ### How can I maximise my XP per hour?
 Quick Tip: When using this script, use a Lucky egg to double the XP for 30 mins. You will level up much faster. A Lucky egg is obtained on level 9 and further on whilst leveling up. (from VipsForever via /r/pokemongodev)
+
 ### How do I use the map??
-You can either view the map via opening the html file, or by serving it with SimpleHTTPServer (runs on localhost:8000)  
-To use SimpleHTTPServer:  
-```$ python -m SimpleHTTPServer [port]```
-The default port is 8000, you can change that by giving a port number.
-Anything above port 1000 does not require root.
-You will need to set your username(s) in the userdata.js file before opening:  
-Copy userdata.js.example to userdata.js and edit with your favorite text editor.
-put your username in the quotes instead of "username"
-If using multiple usernames format like this:  
-```var users = ["username1","username2"];```
+[See wiki info here] (https://github.com/PokemonGoF/PokemonGo-Bot/wiki/Google-Maps-API-(web-page))
