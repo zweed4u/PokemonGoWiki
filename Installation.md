@@ -16,11 +16,8 @@
 ### Note on branch
 Please keep in mind that master is not always up-to-date whereas 'dev' is. In the installation note below change `master` to `dev` if you want to get and use the latest version.
 
-## How to run with Docker
-
-1. Build the image docker `build -t PokemonGo-Bot:latest .`
-2. Start a new container from this newly created image `docker run -d --name pgobot PokemonGo-Bot:latest`
-3. Check the logs in real-time `docker logs -f pgobot`
+## Update
+To update your project do: `git pull` in the project folder
 
 ### Installation Linux
 (change master to dev for the latest version)
@@ -75,3 +72,9 @@ $ pip2 install -r requirements.txt
 $ git submodule init
 $ git submodule update
 ```
+
+### How to run with Docker
+
+1. Build the image docker `build -t PokemonGo-Bot:latest .`
+2. Start a new container from this newly created image `docker run -d --name pgobot PokemonGo-Bot:latest`
+3. Check the logs in real-time `docker logs -f pgobot`
