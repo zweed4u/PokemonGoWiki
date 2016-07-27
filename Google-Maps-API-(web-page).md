@@ -11,7 +11,7 @@ $ python -m SimpleHTTPServer [port]
 ```
 The default port is 8000, you can change that by giving a port number. Anything above port 1000 does not require root.
 You will need to set your username(s) in the userdata.js file before opening
-_Copy userdata.js.example to userdata.js and edit with your favorite text editor._
+> Copy userdata.js.example to userdata.js and edit with your favorite text editor.
 Put your username in the quotes instead of "username"
 If using multiple usernames format like this
 ```
