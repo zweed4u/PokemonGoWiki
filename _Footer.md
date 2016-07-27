@@ -1,1 +1,1 @@
-PokemonGO Bot - 2016 Pinus
+PokemonGO Bot - 2016
