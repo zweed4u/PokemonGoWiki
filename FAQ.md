@@ -1,4 +1,4 @@
-### What's IV ?
+### What's IV?
 Here's the [introduction](http://bulbapedia.bulbagarden.net/wiki/Individual_values)
 
 ### Does it run automatically?
