@@ -34,9 +34,3 @@ Quick Tip: When using this script, use a Lucky egg to double the XP for 30 mins.
 
 ### How do I use the map??
 [See wiki info here] (https://github.com/PokemonGoF/PokemonGo-Bot/wiki/Google-Maps-API-(web-page))
-
-
-### How to run with Docker
-1. Build the image docker `build -t PokemonGo-Bot:latest .`
-2. Start a new container from this newly created image `docker run -d --name pgobot PokemonGo-Bot:latest`
-3. Check the logs in real-time `docker logs -f pgobot`
