@@ -15,8 +15,8 @@ done
 ```
 
 
-```For windows:
-@echo off
+
+> @echo off
 :loop
 cmd /k pokecli.py
 timeout /t 3600 >null
