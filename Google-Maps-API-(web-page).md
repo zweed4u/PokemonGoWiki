@@ -25,7 +25,7 @@ sudo apt-get install nginx
 
 #### 2. Check the webserver
 Check if the webserver is running by using your browser and entering the IP address of your local machine/server.
-On a local machine this would be http://127.0.0.1. On AWS this is your public DNS if you haven't configured an elastic IP.
+On a local machine this would be http://127.0.0.1:8000. On AWS this is your public DNS if you haven't configured an elastic IP.
 
 #### 3. Change Base Directory of the Webserver
 ```
