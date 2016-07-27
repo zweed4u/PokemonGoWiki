@@ -6,7 +6,7 @@ One can get softbanned by using the bot. The bot itself will usually tell you an
 Avoid teleporting, use the walking feature. Avoid switching between the bot and app too often. Sometimes the bot gets banned after running too long. 
 
 
-I use this script to restart the bot after an hour, so the bot can run without the need to supervise it.
+(?? is this for linux??)
 ```bash
 until (python pokecli.py); do
     echo "Process crashed with exit code $?.  Respawning.." >&2
@@ -14,13 +14,13 @@ until (python pokecli.py); do
 done
 ```
 
-
+For windows use:
 ```bash
-`@echo off`
-`:loop`
-`cmd /k pokecli.py`
-`timeout /t 3600 >null`
-`taskkill /f /im cmd.exe >null`
-`timeout /t 5 >null`
-`goto loop`
+@echo off
+:loop
+cmd /k pokecli.py
+timeout /t 3600 >null
+taskkill /f /im cmd.exe >null
+timeout /t 5 >null
+goto loop
 ```
