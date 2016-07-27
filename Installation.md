@@ -72,9 +72,3 @@ $ pip2 install -r requirements.txt
 $ git submodule init
 $ git submodule update
 ```
-
-### How to run with Docker
-
-1. Build the image docker `build -t PokemonGo-Bot:latest .`
-2. Start a new container from this newly created image `docker run -d --name pgobot PokemonGo-Bot:latest`
-3. Check the logs in real-time `docker logs -f pgobot`
