@@ -12,6 +12,7 @@ To run PokemonGo-Bot Docker image you've created, simple run:
 ```
 docker run --it --rm --name=pgo-bot-acct1 pokemongo-bot -cf config-account1.json
 ```
+_Check the logs in real-time `docker logs -f pgobot`_
 
 If you want to run multiple accounts with the same Docker image, simply specify different config.json and names in the Docker run command.
 Do not push your image to a registry with your config.json and account details in it!
