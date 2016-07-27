@@ -17,6 +17,8 @@ var users = ["username1","username2"];
 ```
 On Windows you can now go to http://127.0.0.1:8000 to see the map
 
+
+
 ### Nginx on Ubuntu 14.x, 16.x
 #### 1. Install nginx on your Ubuntu machine (e.g. on locally or AWS)
 ```
