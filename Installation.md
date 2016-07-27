@@ -40,10 +40,10 @@ Right-click > save as the `get-pip.py` file - save to desktop
 ## Linux Installation
 
 #### Master Branch  
-`sudo git clone -b master https://github.com/PokemonGoF/PokemonGo-Bot
-cd PokemonGo-Bot
-sudo pip install -r requirements.txt
-sudo git submodule init
-sudo git submodule update`
+`sudo git clone -b master https://github.com/PokemonGoF/PokemonGo-Bot`
+`cd PokemonGo-Bot`
+`sudo pip install -r requirements.txt`
+`sudo git submodule init`
+`sudo git submodule update`
 
 #### Dev Branch  
