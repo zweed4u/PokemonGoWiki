@@ -2,7 +2,7 @@ The webpage is a submodule to this repository and config related to that is in .
 
 [OpenPoGoWeb] (https://github.com/OpenPoGo/OpenPoGoWeb) uses Google Maps. Read their [README] (https://github.com/OpenPoGo/OpenPoGoWeb/blob/master/README.md) for how to configure web frontend
 
-#Additional info
+### Additional info
 You can either view the map via opening the html file, or by serving it with SimpleHTTPServer (runs on localhost:8000)  
 To use SimpleHTTPServer:  
 ```$ python -m SimpleHTTPServer [port]```
