@@ -15,6 +15,7 @@ If using multiple usernames format like this
 ```
 var users = ["username1","username2"];
 ```
+On Windows you can now go to http://127.0.0.1:8000 to see the map
 
 ### Nginx on Ubuntu 14.x, 16.x
 #### 1. Install nginx on your Ubuntu machine (e.g. on locally or AWS)
@@ -25,7 +26,7 @@ sudo apt-get install nginx
 
 #### 2. Check the webserver
 Check if the webserver is running by using your browser and entering the IP address of your local machine/server.
-On a local machine this would be http://127.0.0.1:8000. On AWS this is your public DNS if you haven't configured an elastic IP.
+On a local machine this would be http://127.0.0.1. On AWS this is your public DNS if you haven't configured an elastic IP.
 
 #### 3. Change Base Directory of the Webserver
 ```
