@@ -24,5 +24,5 @@ You need check this [Requests/Messages/RecycleInventoryItemMessage.proto](https:
             self.api.recycle_inventory_item(item_id=item_id,count=count)
             inventory_req = self.api.call()
             print(inventory_req)
-        ```  
+        ```
 5. You can now debug on the log to see if get what you need  
