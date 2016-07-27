@@ -39,5 +39,5 @@ Right-click > save as the `get-pip.py` file - save to desktop
 
 ## Linux Installation
 
-### Master Branch  
-### Dev Branch  
+#### Master Branch  
+#### Dev Branch  
