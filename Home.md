@@ -1,1 +1,1 @@
-placeholder
+This wiki describes the most important functionality of the bot and also provides the important information on configuring the bot. Use then navigation to the pages on the right to find your solution.
