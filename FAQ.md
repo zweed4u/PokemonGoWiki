@@ -1,3 +1,12 @@
+### Python possible bug
+If you encounter problems with the module `ssl` and it's function `_create_unverified_context`, just comment it. (Solution available in Python 2.7.11)
+In order to comment out the function and the module, please follow the instructions below:
+- edit `pokecli.py`
+- put `#` before `if` (line 43) and `ssl` (line 44)
+- save it
+
+Please keep in mind that this fix is only necessary if your python version don't have the `_create_unverified_context` argument in the ssl module.
+
 ### What's IV?
 Here's the [introduction](http://bulbapedia.bulbagarden.net/wiki/Individual_values)
 
