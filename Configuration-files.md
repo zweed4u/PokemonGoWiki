@@ -1,7 +1,7 @@
 ## Usage (up-to-date)
   1. copy `config.json.example` to `config.json` and `release_config.json.example` to `release_config.json`
   2. Edit `config.json` and replace `auth_service`, `username`, `password`, `location` and `gmapkey` with your parameters (other keys are optional, check `Advance Configuration` below)
-  3. Simply launch the script with : `./run.sh` or `./pokecli.py` or `python pokecli.py --cf ./configs/config.json` if you want to specify a config file
+  3. Simply launch the script with : `./run.sh` or `./pokecli.py` or `python pokecli.py -cf ./configs/config.json` if you want to specify a config file
 
 ## Advanced Configuration
 |      Parameter     | Default |                                                                                         Description                                                                                         |
