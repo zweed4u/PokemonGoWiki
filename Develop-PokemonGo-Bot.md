@@ -8,7 +8,7 @@
 Once you are you to date with [dev-branch] (https://github.com/PokemonGoF/PokemonGo-Bot/tree/dev) create a pull request and it will be re-viewed
 
 
-## How to add/discover new API
+### How to add/discover new API
     1. Check the type of your API request in   [POGOProtos](https://github.com/AeonLucid/POGOProtos/blob/eeccbb121b126aa51fc4eebae8d2f23d013e1cb8/src/POGOProtos/Networking/Requests/RequestType.proto) For example: RECYCLE_INVENTORY_ITEM  
     2. Convert to the api call in pokemongo_bot/__init__.py,  RECYCLE_INVENTORY_ITEM change to self.api.recycle_inventory_item
         ```
