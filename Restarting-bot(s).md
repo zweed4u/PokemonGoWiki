@@ -33,7 +33,7 @@ Start script:
 
 restart: 
 
-repeat
+        repeat
 	
 	delay 1200  #timer in seconds 
 	tell application "Terminal"
