@@ -15,7 +15,7 @@ done
 ```
 
 
-
+```bash
 `@echo off`
 `:loop`
 `cmd /k pokecli.py`
@@ -23,3 +23,4 @@ done
 `taskkill /f /im cmd.exe >null`
 `timeout /t 5 >null`
 `goto loop`
+```
