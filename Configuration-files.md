@@ -8,7 +8,7 @@
 |------------------|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `max_steps`        | 5       | The steps around your initial location (DEFAULT 5 mean 25 cells around your location) that will be explored                                                                                 |
 | `mode`             | all     | Set farming Mode for the bot ('all', 'poke', 'farm'). 'all' means both spinning Pokéstops and catching Pokémon; 'poke' means only catching Pokémon and 'farm' means only spinning Pokéstops |
-| `walk`             | 4.16    | Set the walking speed in kilometers per hour. (14 km/h is the maximum speed for egg hatching)                                                                                               |
+| `walk`             | 4.16    | Set the walking speed in meters per second. (14 km/h is the maximum speed for egg hatching)                                                                                               |
 | `debug`            | false   | Let the default value here except if you are developer                                                                                                                                      |
 | `test`             | false   | Let the default value here except if you are developer                                                                                                                                      |
 | `initial_transfer` | false   | Set this to true to transfer your Pokémon at the beginning of the run based on your release config                                                                                          |
