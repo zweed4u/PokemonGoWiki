@@ -1,4 +1,5 @@
 [Check installation guide(s)](https://github.com/PokemonGoF/PokemonGo-Bot/wiki/Installation)
+
 [Also have a look at our FAQ](https://github.com/PokemonGoF/PokemonGo-Bot/wiki/FAQ)
 
 
