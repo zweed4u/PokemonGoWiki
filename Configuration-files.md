@@ -43,15 +43,27 @@ For example: ```"Pidgey": {"never_capture": true}``` will stop catching Pidgey e
 
 Default configuration will not release any Pokémon.
 
-```"any": {"release_below_cp": 0, "release_below_iv": 0, "logic": "or"}```
+```"release": {"any": {"release_below_cp": 0, "release_below_iv": 0, "logic": "or"}}```
 
 You can override the global configuration with Pokémon-specific options, such as:
 
-```"Pidgey": {"release_below_cp": 0, "release_below_iv": 0.8, "logic": "or"}``` to only release Pidgey with bad rolls.
+```"release": {"Pidgey": {"release_below_cp": 0, "release_below_iv": 0.8, "logic": "or"}}``` to only release Pidgey with bad rolls.
 
 Additionally, you can specify always_release and never_release flags. For example:
 
-```"Pidgey": {"always_release": true}``` will release all Pidgey caught.
+```"release": {"Pidgey": {"always_release": true}}``` will release all Pidgey caught.
+
+### Keep the strongest pokemon configuration
+
+You can set ```"release": {"Pidgey": {"keep_best_cp": 1}}``` or ```"release": {"any": {"keep_best_iv": 1}}```.
+
+In that case after each capture bot will check that do you have a new Pokémon or not.
+
+If you don't have it, it will keep it (no matter was it strong or weak Pokémon).
+
+If you already have it, it will keep a stronger version and will transfer the a weaker one.
+
+```"release": {"any": {"keep_best_cp": 2}}```, ```"release": {"any": {"keep_best_cp": 10}}``` - can be any number.
 
 ## Evolve All Configuration
 
