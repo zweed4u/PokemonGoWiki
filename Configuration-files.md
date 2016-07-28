@@ -53,18 +53,6 @@ Additionally, you can specify always_release and never_release flags. For exampl
 
 ```"Pidgey": {"always_release": true}``` will release all Pidgey caught.
 
-### Keep the strongest pokemon configuration
-
-You can set ```"any": {"keep_best_cp": 1}``` or ```"any": {"keep_best_iv": 1}```.
-
-In that case after each capture bot will check that do you have a new Pokémon or not.
-
-If you don't have it, it will keep it (no matter was it strong or weak Pokémon).
-
-If you already have it, it will keep a stronger version and will transfer the a weaker one.
-
-```"any": {"keep_best_cp": 2}```, ```"any": {"keep_best_cp": 10}``` - can be any number.
-
 ## Evolve All Configuration
 
 By setting the `evolve_all` attribute in config.json, you can instruct the bot to automatically
