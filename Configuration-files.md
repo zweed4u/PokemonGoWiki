@@ -21,7 +21,8 @@
 | `evolve_speed`     | 20      | Set the speed between each evolves in seconds. (Defaults to 3.7 seconds if not set)                                                                                                         |
 | `cp_min`           | 300   |                   Min. CP for evolve_all function                                                                                                                                                                          |
 | `use_lucky_egg`    | false   | Use lucky egg to boost xp loot                                                                                                                                                              |
-| `evolve_captured`  | false   | Evolve Pokémon after capturing                                                                                                                                                              |
+| `evolve_captured`  | false   | Evolve Pokémon after capturing   
+| `release_pokemon` | false | Allow transfer Pokemon to professor based on release configuration.                                                                                                                                                            |
 
 ## Catch Configuration
 Default configuration will capture all Pokémon.
