@@ -11,7 +11,6 @@
 | `walk`             | 4.16    | Set the walking speed in meters per second. (14 km/h is the maximum speed for egg hatching)                                                                                               |
 | `action_wait_min   | 1       | Set the minimum time setting for anti-ban time randomizer
 | `action_wait_max   | 4       | Set the maximum time setting for anti-ban time randomizer
-|
 | `debug`            | false   | Let the default value here except if you are developer                                                                                                                                      |
 | `test`             | false   | Let the default value here except if you are developer                                                                                                                                      |
 | `initial_transfer` | 0   | Set this to min CP to transfer your Pokémon at the beginning of the run  (0 disabled). All duplicate Pokémon under VALUE will be transferred, keeping the highest CP of each type.                                                                                           |
