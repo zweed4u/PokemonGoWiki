@@ -21,7 +21,7 @@
 | `cp_min`           | 300   |                   Min. CP for evolve_all function                                                                                                                                                                          |
 | `use_lucky_egg`    | false   | Use lucky egg to boost xp loot                                                                                                                                                              |
 | `evolve_captured`  | false   | Evolve Pokémon after capturing   
-| `release_pokemon` | false | Allow transfer Pokemon to professor based on release configuration.                                                                                                                                                            |
+| `release_pokemon` | true | Allow transfer Pokemon to professor based on release configuration.                                                                                                                                                            |
 
 ## Catch Configuration
 Default configuration will capture all Pokémon.
