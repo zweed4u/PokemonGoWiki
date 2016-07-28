@@ -47,7 +47,7 @@ Default configuration will not release any Pokémon.
 
 You can override the global configuration with Pokémon-specific options, such as:
 
-```"Pidgey": {"release_below_cp": 0, "release_below_iv": 0.8", "logic": "or"}``` to only release Pidgey with bad rolls.
+```"Pidgey": {"release_below_cp": 0, "release_below_iv": 0.8, "logic": "or"}``` to only release Pidgey with bad rolls.
 
 Additionally, you can specify always_release and never_release flags. For example:
 
