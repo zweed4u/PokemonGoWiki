@@ -30,23 +30,24 @@ Default configuration will capture all Pokémon.
 
 You can override the global configuration with Pokémon-specific options, such as:
 
-```"Pidgey": {"catch_above_cp": 0, "catch_above_iv": 0.8", "logic": "and"}```
+```"Pidgey": {"catch_above_cp": 0, "catch_above_iv": 0.8", "logic": "and"}``` to only capture Pidgey with a good roll.
 
-to only capture Pidgey with a good roll.
+Additionally, you can specify always_capture and never_capture flags.
 
-Additionally, you can specify always_capture and never_capture flags. For example:
-```"Pidgey": {"never_capture": true}```
-will stop catching Pidgey entirely.
+For example: ```"Pidgey": {"never_capture": true}``` will stop catching Pidgey entirely.
 
 ## Release Configuration
 Default configuration will not release any Pokémon.
+
 ```"any": {"release_below_cp": 0, "release_below_iv": 0, "logic": "or"}```
+
 You can override the global configuration with Pokémon-specific options, such as:
-```"Pidgey": {"release_below_cp": 0, "release_below_iv": 0.8", "logic": "or"}```
-to only release Pidgey with bad rolls.
+
+```"Pidgey": {"release_below_cp": 0, "release_below_iv": 0.8", "logic": "or"}``` to only release Pidgey with bad rolls.
+
 Additionally, you can specify always_release and never_release flags. For example:
-```"Pidgey": {"always_release": true}```
-will release all Pidgey caught.
+
+```"Pidgey": {"always_release": true}``` will release all Pidgey caught.
 
 ### Evolve All Configuration
     By setting the `evolve_all` attribute in config.json, you can instruct the bot to automatically
