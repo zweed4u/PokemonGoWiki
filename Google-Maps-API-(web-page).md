@@ -38,3 +38,4 @@ Comment out following line: ```root /var/www/html;``` and change it to the web f
 ```
 /home/user/dev/PokemonGo-Bot/web;
 ```
+Use `nginx -s reload` to load the new configurations.
