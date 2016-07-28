@@ -50,22 +50,23 @@ Additionally, you can specify always_release and never_release flags. For exampl
 ```"Pidgey": {"always_release": true}``` will release all Pidgey caught.
 
 ### Evolve All Configuration
-    By setting the `evolve_all` attribute in config.json, you can instruct the bot to automatically
-    evolve specified Pokémon on startup. This is especially useful for batch-evolving after popping up
-    a lucky egg (currently this needs to be done manually).
-    
-    The evolve all mechanism evolves only higher IV/CP Pokémon. It works by sorting the high CP Pokémon (default: 300 CP or higher)
-    based on their IV values. After evolving all high CP Pokémon, the mechanism will move on to evolving lower CP Pokémon
-    only based on their CP (if it can).
-    It will also automatically transfer the evolved Pokémon based on the release configuration.
-    
-    Examples on how to use (set in config.json):
-    
-    1. "evolve_all": "all"
-      Will evolve ALL Pokémon.
-    2. "evolve_all": "Pidgey,Weedle"
-      Will only evolve Pidgey and Weedle.
-    3. Not setting evolve_all or having any other string would not evolve any Pokémon on startup.
-    
-    If you wish to change the default threshold of 300 CP, simply add the following to the config file:
-    	"cp_min": <number>
+
+By setting the `evolve_all` attribute in config.json, you can instruct the bot to automatically
+evolve specified Pokémon on startup. This is especially useful for batch-evolving after popping up
+a lucky egg (currently this needs to be done manually).
+
+The evolve all mechanism evolves only higher IV/CP Pokémon. It works by sorting the high CP Pokémon (default: 300 CP or higher)
+based on their IV values. After evolving all high CP Pokémon, the mechanism will move on to evolving lower CP Pokémon
+only based on their CP (if it can).
+It will also automatically transfer the evolved Pokémon based on the release configuration.
+
+Examples on how to use (set in config.json):
+
+1. "evolve_all": "all"
+  Will evolve ALL Pokémon.
+2. "evolve_all": "Pidgey,Weedle"
+  Will only evolve Pidgey and Weedle.
+3. Not setting evolve_all or having any other string would not evolve any Pokémon on startup.
+
+If you wish to change the default threshold of 300 CP, simply add the following to the config file:
+	"cp_min": <number>
