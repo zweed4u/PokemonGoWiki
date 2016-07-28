@@ -37,6 +37,9 @@ Additionally, you can specify always_capture and never_capture flags.
 For example: ```"Pidgey": {"never_capture": true}``` will stop catching Pidgey entirely.
 
 ## Release Configuration
+
+### Common configuration
+
 Default configuration will not release any Pokémon.
 
 ```"any": {"release_below_cp": 0, "release_below_iv": 0, "logic": "or"}```
@@ -49,7 +52,17 @@ Additionally, you can specify always_release and never_release flags. For exampl
 
 ```"Pidgey": {"always_release": true}``` will release all Pidgey caught.
 
-### Evolve All Configuration
+### Keep the strongest pokemon configuration
+
+You can set ```"any": {"keep_best_cp": true}``` or ```"any": {"keep_best_iv": true}```.
+
+In that case after each capture bot will check that do you have a new pokemon or not.
+
+If you don't have it, it will keep it (no matter was it strong or weak pokemon).
+
+If you already have it, it will keep a stronger version and will transfer the a weaker one.
+
+## Evolve All Configuration
 
 By setting the `evolve_all` attribute in config.json, you can instruct the bot to automatically
 evolve specified Pokémon on startup. This is especially useful for batch-evolving after popping up
