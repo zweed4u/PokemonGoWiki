@@ -12,7 +12,7 @@ One can get softbanned by using the bot. The bot itself will usually tell you an
 Avoid teleporting, use the walking feature. Avoid switching between the bot and app too often. Sometimes the bot gets banned after running too long. 
 
 
-(?? is this for linux??)
+For OS X / linux:
 ```bash
 until (python pokecli.py); do
     echo "Process crashed with exit code $?.  Respawning.." >&2
