@@ -1,3 +1,10 @@
+### How do I start the application?
+After customizing your config.json files, cd to the PokemonGo-Bot folder and enter:
+```
+$ python pokecli.py
+```
+This will start the application.
+
 ### Python possible bug
 If you encounter problems with the module `ssl` and it's function `_create_unverified_context`, just comment it. (Solution available in Python 2.7.11)
 In order to comment out the function and the module, please follow the instructions below:
@@ -17,7 +24,6 @@ Not yet, still need a trainer to train the script param. But we are very close t
 It works, use "location": "59.333409,18.045008", in configs/config.json to set lat long for location. Use a Pokemon Go map to find an area with pokemons you still need (e.g. [https://pokevision.com/](https://pokevision.com/)), however don't jump too big distances (see "softban").
 
 ### Google login issues (Login Error, Server busy)?
-
 Try to generate an [app password](!https://support.google.com/accounts/answer/185833?hl=en) and set is as
 ```
 -p "<your-app-password>"
