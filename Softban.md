@@ -9,7 +9,7 @@
 
 ## Softban
 One can get softbanned by using the bot. The bot itself will usually tell you and exit. When softbanned, the player can't get loot from pokestops and all wild pokemons will always escape on the first try to catch.
-Avoid teleporting, use the walking feature. Avoid switching between the bot and app too often. Sometimes the bot gets banned after running too long. 
+Avoid teleporting, use the walking feature. Avoid switching between the bot and app too often (as it's teleporting).
 
 
 For OS X / linux:
