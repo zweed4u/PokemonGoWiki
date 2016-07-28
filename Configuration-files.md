@@ -53,7 +53,7 @@ Additionally, you can specify always_release and never_release flags. For exampl
 
 ```"release": {"Pidgey": {"always_release": true}}``` will release all Pidgey caught.
 
-### Keep the strongest pokemon configuration
+### Keep the strongest pokemon configuration (dev branch)
 
 You can set ```"release": {"Pidgey": {"keep_best_cp": 1}}``` or ```"release": {"any": {"keep_best_iv": 1}}```.
 
