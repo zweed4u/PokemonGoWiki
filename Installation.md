@@ -17,7 +17,9 @@
 Please keep in mind that master is not always up-to-date whereas 'dev' is. In the installation note below change `master` to `dev` if you want to get and use the latest version.
 
 ## Update
-To update your project do: `git pull` in the project folder
+To update your project do (in the project folder): `git pull`
+
+To update python requirement packages do (in the project folder): `pip install --upgrade -r requirements.txt`
 
 ### Installation Linux
 (change master to dev for the latest version)
