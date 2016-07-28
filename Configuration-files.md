@@ -56,9 +56,9 @@ Additionally, you can specify always_release and never_release flags. For exampl
 
 You can set ```"any": {"keep_best_cp": true}``` or ```"any": {"keep_best_iv": true}```.
 
-In that case after each capture bot will check that do you have a new pokemon or not.
+In that case after each capture bot will check that do you have a new Pokémon or not.
 
-If you don't have it, it will keep it (no matter was it strong or weak pokemon).
+If you don't have it, it will keep it (no matter was it strong or weak Pokémon).
 
 If you already have it, it will keep a stronger version and will transfer the a weaker one.
 
