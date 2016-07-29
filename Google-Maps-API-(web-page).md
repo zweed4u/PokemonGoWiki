@@ -39,3 +39,16 @@ Comment out following line: ```root /var/www/html;``` and change it to the web f
 /home/user/dev/PokemonGo-Bot/web;
 ```
 Use `nginx -s reload` to load the new configurations.
+
+
+***
+Common Errors and Solutions
+
+> missing  files: 127.0.0.1 - -  "GET /catchable-YOURACCOUNT.json 404 
+and location-SOMEACCOUNT.json 404
+
+just create the file catachable-someaccount@gmail.com.json and put 
+```    
+{}
+```
+save and close repeat for other file. (location-SOMEACCOUNT.json) 
