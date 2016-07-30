@@ -19,11 +19,11 @@
 | `location_cache`   | true    | Bot will start at last known location if you do not have location set in the config                                                                                                         |
 | `distance_unit`    | km      | Set the unit to display distance in (km for kilometers, mi for miles, ft for feet)                                                                                                          |
 | `item_filter`      |         | Pass a list of unwanted [items (using their JSON codes)](https://github.com/PokemonGoF/PokemonGo-Bot/wiki/Item-ID's) to recycle when collected at a Pokestop                                                                                                      |
-| `evolve_all`       | NONE    | Set to "all" to evolve Pokémon if possible. Can also be set to individual Pokémon as well as multiple seperated by a comma. e.g "Pidgey,Rattata,Weedle,Zubat"                                                                                                            |
+| `evolve_all`       | NONE    | Set to "all" to evolve Pokémon if possible when the bot starts. Can also be set to individual Pokémon as well as multiple separated by a comma. e.g "Pidgey,Rattata,Weedle,Zubat"                                                                                                           |
 | `evolve_speed`     | 20      | Set the speed between each evolves in seconds. (Defaults to 3.7 seconds if not set)                                                                                                         |
 | `evolve_cp_min`           | 300   |                   Min. CP for evolve_all function                                                                                                                                                                          |
 | `use_lucky_egg`    | false   | Use lucky egg to boost xp loot                                                                                                                                                              |
-| `evolve_captured`  | false   | Evolve Pokémon after capturing   
+evolve_captured | NONE | Set to "all" to evolve Pokémon if possible after capturing them. Can also be set to individual Pokémon as well as multiple separated by a comma. e.g "Pidgey,Rattata,Weedle,Zubat"   
 | `release_pokemon` | true | Allow transfer Pokemon to professor based on release configuration.                                                                                                                                                            |
 
 ## Catch Configuration
@@ -82,9 +82,14 @@ Examples on how to use (set in config.json):
 
 1. "evolve_all": "all"
   Will evolve ALL Pokémon.
+
 2. "evolve_all": "Pidgey,Weedle"
   Will only evolve Pidgey and Weedle.
+
 3. Not setting evolve_all or having any other string would not evolve any Pokémon on startup.
 
 If you wish to change the default threshold of 300 CP, simply add the following to the config file:
-	"cp_min": <number>
+
+```
+"evolve_cp_min":  <number>
+```
