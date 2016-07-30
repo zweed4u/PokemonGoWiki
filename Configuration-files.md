@@ -6,7 +6,10 @@
 ## Advanced Configuration
 |      Parameter     | Default |                                                                                         Description                                                                                         |
 |------------------|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `max_steps`        | 5       | The steps around your initial location (DEFAULT 5 mean 25 cells around your location) that will be explored                                                                                 |
+| `max_steps`        | 5       | The steps around your initial location (DEFAULT 5 mean 25 cells around your location) that will be explored                                                                              
+|   
+| `softban_fix`  | False       | Fix softban automatically 
+|
 | `catch_pokemon`             | true     | Set whether the bot should catch pokemon |
 | `forts.spin`             | true     | Set whether the bot should spin forts |
 | `forts.avoid_circles`             | False     | Set whether the bot should avoid circles |
@@ -24,6 +27,7 @@
 | `evolve_cp_min`           | 300   |                   Min. CP for evolve_all function                                                                                                                                                                          |
 | `use_lucky_egg`    | false   | Use lucky egg to boost xp loot                                                                                                                                                              |
 | `evolve_captured` | NONE | Set to "all" to evolve Pokémon if possible after capturing them. Can also be set to individual Pokémon as well as multiple separated by a comma. e.g "Pidgey,Rattata,Weedle,Zubat"   
+|
 | `release_pokemon` | true | Allow transfer Pokemon to professor based on release configuration.                                                                                                                                                            |
 
 ## Catch Configuration
