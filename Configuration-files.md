@@ -98,3 +98,10 @@ If you wish to change the default threshold of 300 CP, simply add the following 
 ```
 "evolve_cp_min":  <number>
 ```
+
+## Path Navigator Configuration
+
+Setting the `navigator.type` setting to `path` allows you to specify waypoints which the bot will follow. The waypoints can be loaded from a GPX or JSON file. By default the bot will walk along all specified waypoints and then move directly to the first waypoint again. When setting `navigator.path_mode` to `linear`, the bot will turn around at the last waypoint and along the given waypoints in reverse order.
+
+An example for a JSON file can be found in `configs/path.example.json`. GPX files can be exported from many online tools, such as gpsies.com.The bot loads the first segment of the first track.
+
