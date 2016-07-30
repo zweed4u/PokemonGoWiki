@@ -35,7 +35,7 @@
 ## Configuring Tasks
 The behaviors of the bot are configured via the `tasks` key in the `config.json`. This enables you to list what you want the bot to do and change the priority of those tasks by reordering them in the list.
 
-### An example o:
+### An example task configuration if you only wanted to collect items from forts:
 ```
 {
   // ...
