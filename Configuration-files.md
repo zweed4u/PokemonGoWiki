@@ -6,7 +6,7 @@
 ## Advanced Configuration
 |      Parameter     | Default |                                                                                         Description                                                                                         |
 |------------------|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tasks`            | []     | The behaviors you want the bot to do
+| `tasks`            | []     | The behaviors you want the bot to do. Read [how to configure tasks](#configuring-tasks).
 | `max_steps`        | 5       | The steps around your initial location (DEFAULT 5 mean 25 cells around your location) that will be explored                                                                              
 | `softban_fix`  | False       | Fix softban automatically 
 | `catch_pokemon`             | true     | Set whether the bot should catch pokemon |
