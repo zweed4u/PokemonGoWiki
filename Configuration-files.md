@@ -6,6 +6,7 @@
 ## Advanced Configuration
 |      Parameter     | Default |                                                                                         Description                                                                                         |
 |------------------|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `tasks`            | []     | The behaviors you want the bot to do
 | `max_steps`        | 5       | The steps around your initial location (DEFAULT 5 mean 25 cells around your location) that will be explored                                                                              
 | `softban_fix`  | False       | Fix softban automatically 
 | `catch_pokemon`             | true     | Set whether the bot should catch pokemon |
@@ -71,6 +72,9 @@ If you don't have it, it will keep it (no matter was it strong or weak Pokémon)
 If you already have it, it will keep a stronger version and will transfer the a weaker one.
 
 ```"release": {"any": {"keep_best_cp": 2}}```, ```"release": {"any": {"keep_best_cp": 10}}``` - can be any number.
+
+## Configuring Tasks
+The behaviors of the bot are configured via the `tasks` key in the config.json
 
 ## Evolve All Configuration
 
