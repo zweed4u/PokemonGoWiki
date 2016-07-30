@@ -32,6 +32,9 @@
 | `evolve_captured` | NONE | Set to "all" to evolve Pokémon if possible after capturing them. Can also be set to individual Pokémon as well as multiple separated by a comma. e.g "Pidgey,Rattata,Weedle,Zubat"   
 | `release_pokemon` | true | Allow transfer Pokemon to professor based on release configuration.
 
+## Configuring Tasks
+The behaviors of the bot are configured via the `tasks` key in the config.json
+
 ## Catch Configuration
 Default configuration will capture all Pokémon.
 
@@ -72,9 +75,6 @@ If you don't have it, it will keep it (no matter was it strong or weak Pokémon)
 If you already have it, it will keep a stronger version and will transfer the a weaker one.
 
 ```"release": {"any": {"keep_best_cp": 2}}```, ```"release": {"any": {"keep_best_cp": 10}}``` - can be any number.
-
-## Configuring Tasks
-The behaviors of the bot are configured via the `tasks` key in the config.json
 
 ## Evolve All Configuration
 
