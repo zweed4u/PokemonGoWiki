@@ -76,6 +76,24 @@ The following configuration tells the bot to transfer all the Pokemon that match
 }
 ```
 
+### Specifying configuration for tasks
+If you want to configure a given task, you can pass values like this:
+
+```
+{
+  // ...
+  "tasks": [
+    {
+      "type": "IncubateEggs",
+      "config": {
+        "longer_eggs_first": true
+      }
+    }
+  ]
+  // ...
+}
+```
+
 ### An example task configuration if you only wanted to collect items from forts:
 ```
 {
