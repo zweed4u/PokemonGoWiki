@@ -8,12 +8,8 @@
 |------------------|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `tasks`            | []     | The behaviors you want the bot to do. Read [how to configure tasks](#configuring-tasks).
 | `max_steps`        | 5       | The steps around your initial location (DEFAULT 5 mean 25 cells around your location) that will be explored                                                                              
-| `softban_fix`  | False       | Fix softban automatically 
-| `catch_pokemon`             | true     | Set whether the bot should catch pokemon |
-| `forts.spin`             | true     | Set whether the bot should spin forts |
 | `forts.avoid_circles`             | False     | Set whether the bot should avoid circles |
 | `forts.max_circle_size`             | 10     | How many forts to keep in ignore list |
-| `forts.move_to_spin`             | true     | Set whether the bot should move to forts |
 | `navigator.type`             | spiral     | Set the navigator to be used (spiral or path). |
 | `navigator.path_mode`             | loop     | Set the mode for the path navigator (loop or linear). |
 | `navigator.path_file`             | NONE     | Set the file containing the waypoints for the path navigator. |
@@ -29,8 +25,6 @@
 | `evolve_speed`     | 20      | Set the speed between each evolves in seconds. (Defaults to 3.7 seconds if not set)                                                                                                         |
 | `evolve_cp_min`           | 300   |                   Min. CP for evolve_all function             
 | `use_lucky_egg`    | false   | Use lucky egg to boost xp loot
-| `evolve_captured` | NONE | Set to "all" to evolve Pokémon if possible after capturing them. Can also be set to individual Pokémon as well as multiple separated by a comma. e.g "Pidgey,Rattata,Weedle,Zubat"   
-| `release_pokemon` | true | Allow transfer Pokemon to professor based on release configuration.
 
 ## Configuring Tasks
 The behaviors of the bot are configured via the `tasks` key in the `config.json`. This enables you to list what you want the bot to do and change the priority of those tasks by reordering them in the list. This list of tasks is run repeatedly and in order.
