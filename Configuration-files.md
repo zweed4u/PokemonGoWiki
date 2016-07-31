@@ -11,8 +11,6 @@
 | `forts.avoid_circles`             | False     | Set whether the bot should avoid circles |
 | `forts.max_circle_size`             | 10     | How many forts to keep in ignore list |
 | `navigator.type`             | spiral     | Set the navigator to be used (spiral or path). |
-| `navigator.path_mode`             | loop     | Set the mode for the path navigator (loop or linear). |
-| `navigator.path_file`             | NONE     | Set the file containing the waypoints for the path navigator. |
 | `walk`             | 4.16    | Set the walking speed in kilometers per hour. (14 km/h is the maximum speed for egg hatching)                                                                                               |
 | `action_wait_min`   | 1       | Set the minimum time setting for anti-ban time randomizer
 | `action_wait_max`   | 4       | Set the maximum time setting for anti-ban time randomizer
@@ -34,6 +32,8 @@ The behaviors of the bot are configured via the `tasks` key in the `config.json`
   * `evolve_speed`: Default `20`
   * `use_lucky_egg`: Default: `False`
 * FollowPath
+  * `path_mode`: Default `loop` | Set the mode for the path navigator (loop or linear).
+  * `path_file`: Default `NONE` | Set the file containing the waypoints for the path navigator. 
 * FollowSpiral
 * HandleSoftBan
 * IncubateEggs
