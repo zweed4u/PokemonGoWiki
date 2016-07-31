@@ -22,7 +22,6 @@
 | `distance_unit`    | km      | Set the unit to display distance in (km for kilometers, mi for miles, ft for feet)                                                                                                          |
 | `item_filter`      |         | Pass a list of unwanted [items (using their JSON codes)](https://github.com/PokemonGoF/PokemonGo-Bot/wiki/Item-ID's) to recycle when collected at a Pokestop                                                                                                      |
 | `evolve_all`       | NONE    | Set to "all" to evolve Pokémon if possible when the bot starts. Can also be set to individual Pokémon as well as multiple separated by a comma. e.g "Pidgey,Rattata,Weedle,Zubat"                                                                                                           |
-| `evolve_speed`     | 20      | Set the speed between each evolves in seconds. (Defaults to 3.7 seconds if not set)                                                                                                         |
 | `evolve_cp_min`           | 300   |                   Min. CP for evolve_all function             
 | `use_lucky_egg`    | false   | Use lucky egg to boost xp loot
 
@@ -33,6 +32,7 @@ The behaviors of the bot are configured via the `tasks` key in the `config.json`
 * CatchLuredPokemon
 * CatchVisiblePokemon
 * EvolveAll
+  * `evolve_speed`: Default `20`
 * FollowPath
 * FollowSpiral
 * HandleSoftBan
