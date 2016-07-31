@@ -33,13 +33,48 @@
 | `release_pokemon` | true | Allow transfer Pokemon to professor based on release configuration.
 
 ## Configuring Tasks
-The behaviors of the bot are configured via the `tasks` key in the `config.json`. This enables you to list what you want the bot to do and change the priority of those tasks by reordering them in the list.
+The behaviors of the bot are configured via the `tasks` key in the `config.json`. This enables you to list what you want the bot to do and change the priority of those tasks by reordering them in the list. This list of tasks is run repeatedly and in order.
+
+### Example configuration:
+The following configuration tells the bot to transfer all the Pokemon that match the transfer configuration rules, then recycle the items that match its configuration, then catch the pokemon that it can, so on, so forth. Note the last two tasks, MoveToFort and FollowSpiral. When a task is still in progress, it won't run the next things in the list. So it will move towards the fort, on each step running through the list of tasks again. Only when it arrives at the fort and there are no other stops available for it to move towards will it continue to the next step and follow the spiral.
+
+```
+{
+  // ...
+  "tasks": [
+    {
+      "type": "TransferPokemon"
+    }, 
+    {
+      "type": "RecycleItems"
+    }, 
+    {
+      "type": "CatchVisiblePokemon"
+    }, 
+    {
+      "type": "CatchLuredPokemon"
+    }, 
+    {
+      "type": "SpinFort"
+    }, 
+    {
+      "type": "MoveToFort"
+    }, 
+    {
+      "type": "FollowSpiral"
+    }
+  ]
+  // ...
+}
 
 ### An example task configuration if you only wanted to collect items from forts:
 ```
 {
   // ...
   "tasks": [
+    {
+      "type": "RecycleItems"
+    },
     {
       "type": "SpinFortWorker"
     },
@@ -50,6 +85,19 @@ The behaviors of the bot are configured via the `tasks` key in the `config.json`
   // ...
 }
 ```
+
+### Task Options:
+* CatchLuredPokemon
+* CatchVisiblePokemon
+* EvolveAll
+* FollowPath
+* FollowSpiral
+* HandleSoftBan
+* IncubateEggs
+* MoveToFort
+* RecycleItems
+* SpinFort
+* TransferPokemon
 
 ## Catch Configuration
 Default configuration will capture all Pokémon.
