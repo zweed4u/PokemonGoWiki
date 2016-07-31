@@ -23,7 +23,6 @@
 | `item_filter`      |         | Pass a list of unwanted [items (using their JSON codes)](https://github.com/PokemonGoF/PokemonGo-Bot/wiki/Item-ID's) to recycle when collected at a Pokestop                                                                                                      |
 | `evolve_all`       | NONE    | Set to "all" to evolve Pokémon if possible when the bot starts. Can also be set to individual Pokémon as well as multiple separated by a comma. e.g "Pidgey,Rattata,Weedle,Zubat"                                                                                                           |
 | `evolve_cp_min`           | 300   |                   Min. CP for evolve_all function             
-| `use_lucky_egg`    | false   | Use lucky egg to boost xp loot
 
 ## Configuring Tasks
 The behaviors of the bot are configured via the `tasks` key in the `config.json`. This enables you to list what you want the bot to do and change the priority of those tasks by reordering them in the list. This list of tasks is run repeatedly and in order.
@@ -33,11 +32,12 @@ The behaviors of the bot are configured via the `tasks` key in the `config.json`
 * CatchVisiblePokemon
 * EvolveAll
   * `evolve_speed`: Default `20`
+  * `use_lucky_egg`: Default: `False`
 * FollowPath
 * FollowSpiral
 * HandleSoftBan
 * IncubateEggs
-  * `longer_eggs_first`: Default `true`
+  * `longer_eggs_first`: Default `True`
 * MoveToFort
 * RecycleItems
 * SpinFort
