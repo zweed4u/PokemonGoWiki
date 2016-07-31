@@ -37,6 +37,7 @@ The behaviors of the bot are configured via the `tasks` key in the `config.json`
 * FollowSpiral
 * HandleSoftBan
 * IncubateEggs
+  * `longer_eggs_first`: Default `true`
 * MoveToFort
 * RecycleItems
 * SpinFort
