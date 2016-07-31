@@ -22,7 +22,7 @@
 | `evolve_cp_min`           | 300   |                   Min. CP for evolve_all function             
 
 ## Configuring Tasks
-The behaviors of the bot are configured via the `tasks` key in the `config.json`. This enables you to list what you want the bot to do and change the priority of those tasks by reordering them in the list. This list of tasks is run repeatedly and in order.
+The behaviors of the bot are configured via the `tasks` key in the `config.json`. This enables you to list what you want the bot to do and change the priority of those tasks by reordering them in the list. This list of tasks is run repeatedly and in order. For more information on why we are moving config to this format, check out the [original proposal](https://github.com/PokemonGoF/PokemonGo-Bot/issues/142).
 
 ### Task Options:
 * CatchLuredPokemon
