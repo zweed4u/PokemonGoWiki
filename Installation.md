@@ -26,7 +26,9 @@ To update python requirement packages do (in the project folder): `pip install -
 
 ```
 $ git clone --recursive -b master https://github.com/PokemonGoF/PokemonGo-Bot  
-$ cd PokemonGo-Bot  
+$ cd PokemonGo-Bot
+$ virtualenv .
+$ source bin/activate  
 $ pip install -r requirements.txt
 ```
 
@@ -69,7 +71,9 @@ After this, just do:
 
 ```
 $ git clone -b master https://github.com/PokemonGoF/PokemonGo-Bot  
-$ cd PokemonGo-Bot  
+$ cd PokemonGo-Bot
+$ virtualenv .
+$ script\activate  
 $ pip2 install -r requirements.txt
 $ git submodule init
 $ git submodule update
