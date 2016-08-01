@@ -3,7 +3,7 @@
 - [Python 2.7.x](http://docs.python-guide.org/en/latest/starting/installation/)
 - [pip](https://pip.pypa.io/en/stable/installing/)
 - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [virtualenv](https://virtualenv.pypa.io/en/stable/installation/) (Optional)
+- [virtualenv](https://virtualenv.pypa.io/en/stable/installation/) (Recommended)
 - [docker](https://docs.docker.com/engine/installation/) (Optional) - [how to setup after installation](https://github.com/PokemonGoF/PokemonGo-Bot/wiki/How-to-run-with-Docker)
 - [protobuf 3](https://github.com/google/protobuf) (OS Dependent, see below)
 
