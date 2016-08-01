@@ -194,7 +194,7 @@ A `nickname_template` can be specified for the `NicknamePokemon` task to allow a
 
 The `NicknamePokemon` task will rename all pokemon in inventory on startup to match the given template and will rename any newly caught/hatched/evolved pokemon as the bot runs. _It may take one or two "ticks" after catching/hatching/evolving a pokemon for it to be renamed. This is intended behavior._
 
-**NOTE:** If you experience frequent `Pokemon not found` error messages, this is because the inventory cache has not been updated after a pokemon was released. This can be remedied by placing the `NicknamePokemon` task above the `TransferPokemon` task in your `config.json` file.
+> **NOTE:** If you experience frequent `Pokemon not found` error messages, this is because the inventory cache has not been updated after a pokemon was released. This can be remedied by placing the `NicknamePokemon` task above the `TransferPokemon` task in your `config.json` file.
 
 Niantic imposes a 12-character limit on all pokemon nicknames, so any new nickname will be truncated to 12 characters if over that limit. Thus, it is up to the user to exercise judgment on what template will best suit their need with this constraint in mind.
 
@@ -209,7 +209,7 @@ Valid names in templates are:
 - `iv_sum` = pokemon's IVs as a sum (e.g. 45 when 3 perfect 15 IVs)
 - `iv_pct` = pokemon's IVs as a percentage (0-100)
 
-**NOTE:** Use a blank template (`""`) to revert all pokemon to their original names (as if they had no nickname).
+> **NOTE:** Use a blank template (`""`) to revert all pokemon to their original names (as if they had no nickname).
 
 Sample usages: 
 - `"{name}_{iv_pct}"` => `Mankey_69`
