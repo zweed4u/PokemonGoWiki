@@ -16,8 +16,7 @@
 | `debug`            | false   | Let the default value here except if you are developer                                                                                                                                      |
 | `test`             | false   | Let the default value here except if you are developer                                                                                                                                      |                                                                                       |
 | `location_cache`   | true    | Bot will start at last known location if you do not have location set in the config                                                                                                         |
-| `distance_unit`    | km      | Set the unit to display distance in (km for kilometers, mi for miles, ft for feet)                                                                                                          |
-| `item_filter`      |         | Pass a list of unwanted [items (using their JSON codes)](https://github.com/PokemonGoF/PokemonGo-Bot/wiki/Item-ID's) to recycle when collected at a Pokestop                                                                                                      |
+| `distance_unit`    | km      | Set the unit to display distance in (km for kilometers, mi for miles, ft for feet)                                                                                                          |                                                                                                    |
 | `evolve_all`       | NONE    | Set to "all" to evolve Pokémon if possible when the bot starts. Can also be set to individual Pokémon as well as multiple separated by a comma. e.g "Pidgey,Rattata,Weedle,Zubat"                                                                                                           |
 | `evolve_cp_min`           | 300   |                   Min. CP for evolve_all function             
 
@@ -39,6 +38,7 @@ The behaviors of the bot are configured via the `tasks` key in the `config.json`
   * `longer_eggs_first`: Default `True`
 * MoveToFort
 * RecycleItems
+  * `item_filter`: Pass a list of unwanted [items (using their JSON codes)](https://github.com/PokemonGoF/PokemonGo-Bot/wiki/Item-ID's) to recycle when collected at a Pokestop  
 * SpinFort
 * TransferPokemon
 
