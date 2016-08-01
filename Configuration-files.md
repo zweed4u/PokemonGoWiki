@@ -37,6 +37,8 @@ The behaviors of the bot are configured via the `tasks` key in the `config.json`
 * IncubateEggs
   * `longer_eggs_first`: Default `True`
 * MoveToFort
+* NicknamePokemon
+  * `nickname_template`: Default `""` | See the [Pokemon Nicknaming](#pokemon-nicknaming) section for more details
 * RecycleItems
   * `item_filter`: Pass a list of unwanted [items (using their JSON codes)](https://github.com/PokemonGoF/PokemonGo-Bot/wiki/Item-ID's) to recycle when collected at a Pokestop  
 * SpinFort
@@ -186,3 +188,29 @@ Setting the `navigator.type` setting to `path` allows you to specify waypoints w
 
 An example for a JSON file can be found in `configs/path.example.json`. GPX files can be exported from many online tools, such as gpsies.com.The bot loads the first segment of the first track.
 
+## Pokemon Nicknaming
+
+A `nickname_template` can be specified for the `NicknamePokemon` task to allow a nickname template to be applied to all pokemon in the user's inventory. For example, a user wanting all their pokemon to have their IV values as their nickname could use a template `{iv_ads}`, which will cause their pokemon to be named something like `13/7/12` (depending on the pokemon's actual IVs). 
+
+The `NicknamePokemon` task will rename all pokemon in inventory on startup to match the given template and will rename any newly caught/hatched/evolved pokemon as the bot runs. 
+
+Niantic imposes a 12-character limit on all pokemon nicknames, so any new nickname will be truncated to 12 characters if over that limit. Thus, it is up to the user to exercise judgment on what template will best suit their need with this constraint in mind.
+
+Valid names in templates are:
+- `name` = pokemon name
+- `id` = pokemon type id (e.g. 1 for Bulbasaurs)
+- `cp` = pokemon's CP
+- `iv_attack` = pokemon's attack IV
+- `iv_defense` = pokemon's defense IV
+- `iv_stamina` = pokemon's stamina IV
+- `iv_ads` = pokemon's IVs in `(attack)/(defense)/(stamina)` format (matches web UI format -- A/D/S)
+- `iv_sum` = pokemon's IVs as a sum (e.g. 45 when 3 perfect 15 IVs)
+- `iv_pct` = pokemon's IVs as a percentage (0-100)
+
+**NOTE:** Use a blank template (`""`) to revert all pokemon to their original names (as if they had no nickname).
+
+Sample usages: 
+- `"{name}_{iv_pct}"` => `Mankey_69`
+- `"{iv_pct}_{iv_ads}"` => `91_15/11/15`
+- `""` -> `Mankey`
+![sample](https://cloud.githubusercontent.com/assets/8896778/17285954/0fa44a88-577b-11e6-8204-b1302f4294bd.png)
