@@ -37,6 +37,7 @@ The behaviors of the bot are configured via the `tasks` key in the `config.json`
 * IncubateEggs
   * `longer_eggs_first`: Default `True`
 * MoveToFort
+* [MoveToMapPokemon](https://github.com/PokemonGoF/PokemonGo-Bot/wiki/MoveToPokemonMap-configuration)
 * NicknamePokemon
   * `nickname_template`: Default `""` | See the [Pokemon Nicknaming](#pokemon-nicknaming) section for more details
 * RecycleItems
