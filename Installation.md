@@ -45,7 +45,7 @@ $ wget http://pgoapi.com/pgoencrypt.tar.gz
 $ tar -zxvf pgoencrypt.tar.gz
 $ cd pgoencrypt/src/ 
 $ make
-$ mv libencrypt.so ../../encrypt.so
+$ mv libencrypt.so ../../encrypt.so 
 ```
 
 ### Installation Windows
