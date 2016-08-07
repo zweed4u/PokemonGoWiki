@@ -41,6 +41,11 @@ $ cd PokemonGo-Bot
 $ virtualenv .  
 $ source bin/activate  
 $ pip install -r requirements.txt
+$ wget http://pgoapi.com/pgoencrypt.tar.gz 
+$ tar -zxvf pgoencrypt.tar.gz
+$ cd pgoencrypt/src/ 
+$ make
+$ mv libencrypt.so ../../encrypt.so
 ```
 
 ### Installation Windows
